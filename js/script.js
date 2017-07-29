@@ -26,12 +26,8 @@ if (et && et > dt) {
   var timer = setInterval(tick, 1000);
   tick();
 
-  var pause = function () {
-    paused = !paused;
-  };
-
-  $(window).on({
-    blur: pause,
-    focus: pause
+  // don't update DOM when tab isn't visible
+  $(document).on('visibilitychange', function() {
+    paused = document.hidden;
   });
 }
