@@ -4,16 +4,14 @@ body {
   font-size: 100%;
   font-weight: 400;
   line-height: 1.15;
-  margin: 0;
-  padding: 0;
-}
-html {
-  height: 100%;
-  width: 100%;
+  min-height: 100%;
 }
 body {
-  background: #A42222;
+  /* colors from upload.wikimedia.org/wikipedia/commons/8/8d/Adobe_Flash_Player_SVG.svg */
+  background: #B2181D;
+  background: linear-gradient(135deg, #E81C24, #7C1315);
   color: #FFF;
+  margin: 1ex 0 2em;
   text-align: center;
 }
 
@@ -34,7 +32,11 @@ a:active {
 h1 {
   font-size: 420%;
   font-size: 18vw;
-  margin: 0.3ex 0 0.6ex;
+  line-height: 1.1;
+  margin: 0 0 0.5ex;
+  text-shadow:
+    -1px -1px 0 #800,
+    1px 1px 0 #F00;
   text-transform: lowercase;
 }
 h1 b,
@@ -47,9 +49,9 @@ h1 b {
 }
 
 time {
-  font-size: 120%;
+  font-size: 130%;
   font-size: 6vw;
-  line-height: 1.75;
+  line-height: 1.6;
 }
 
 @media (min-width: 801px) {
